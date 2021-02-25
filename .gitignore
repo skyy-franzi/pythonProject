@@ -3,3 +3,7 @@ debug.log
 __pycache__
 test.log
 output.csv
+venv
+loggingPy.py
+parsePara.py
+sql_connect_unittest.py

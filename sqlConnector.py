@@ -9,10 +9,9 @@ class sql_Connector:
         if(outputFileName):
             return False
 
-        myConnection = mysql.connector.connect( host="localhost", user="root", passwd="95Zick96Zack*", db="testdb2")
+        myConnection = mysql.connector.connect( host="localhost", user="root", passwd="root_passwd", db="testdb2")
         cursor = myConnection.cursor()
         cursor.execute("Select * from MOCK_DATA")
-        logging.info("Los geht's!")
 
         with open(outputFileName, 'w') as f:
             writer = csv.writer(f)
